@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Settings>
-    <ContentFolder>content</ContentFolder>
-    <BaseUrl>https://raw.githubusercontent.com/altdoelter13/robloxfiles2015/main/</BaseUrl>
-    <IsScriptAssetUploadEnabled>1</IsScriptAssetUploadEnabled>
-    <IsAnimationAssetUploadEnabled>1</IsAnimationAssetUploadEnabled>
-    <IsImageModelAssetUploadEnabled>1</IsImageModelAssetUploadEnabled>
-    <SilentCrashReport>1</SilentCrashReport>
-</Settings>
