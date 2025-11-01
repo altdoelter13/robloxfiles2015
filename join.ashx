@@ -16,7 +16,7 @@ pcall(function()
 	game:HttpGet("http://www.roblox.com/Game/JoinRate.ashx?st=0&i=0&p=-1&c=GameAppInit&r=Success&d=" .. (math.floor(t*1000)) .. "&ip=localhost&errorType=&platform=" .. platform, false)
 end)
 
-pcall(function() game:SetPlaceID(-1, false) end)
+pcall(function() game:SetPlaceID(1818, false) game:Load("https://github.com/beagleded/Roblox-Places-Archive/blob/main/Games/Classic%20Basplate.rbxl") end)
 
 local startTime = tick()
 local connectResolved = false
@@ -423,3 +423,4 @@ pcall(function() game:SetVideoInfo('<?xml version="1.0"?><entry xmlns="http://ww
 analytics("Join Finished")
 
 ifSeleniumThenSetCookie("SeleniumTest4", "Finished join")
+
