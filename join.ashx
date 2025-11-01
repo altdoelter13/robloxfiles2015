@@ -1,24 +1,5 @@
-Port = 53640 
-Server =  game:GetService("NetworkServer") 
-HostService = game:GetService("RunService")Server:Start(Port,20) 
-game:GetService("RunService"):Run() 
-print("Rowritten server started!") 
-function onJoined(NewPlayer) 
-print("New player found: "..NewPlayer.Name.."") 
-NewPlayer:LoadCharacter(true) 
-while wait() do 
-if NewPlayer.Character.Humanoid.Health == 0 then 
-wait(5) 
-NewPlayer:LoadCharacter(true)
-elseif NewPlayer.Character.Parent  == nil then 
-wait(5) 
-NewPlayer:LoadCharacter(true) 
-end 
-end 
-end 
-game.Players.PlayerAdded:connect(onJoined) 
-local server = "localhost"
-local serverport = 53640 
+local server = "127.0.0.1"
+local serverport = 2005 
 local clientport = 0 
 local playername = "test"
 game:SetMessage("Connecting to server...") 
@@ -29,7 +10,6 @@ end
 local suc, err = pcall(function() 
 client = game:GetService("NetworkClient") 
 local player = game:GetService("Players"):CreateLocalPlayer(0)
-game:Load("rbxasset://place.rbxl")
 player:SetSuperSafeChat(false) 
 game:GetService("Visit") 
 player.Name = playername 
@@ -75,3 +55,4 @@ while true do
 wait(0.001) 
 replicator:SendMarker() 
 end 
+
